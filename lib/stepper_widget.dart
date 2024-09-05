@@ -13,38 +13,40 @@ class _StepperWidgetState extends State<StepperWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Stepper"),
+        title: const Text("Stepper"),
       ),
-      body: Stepper(
-        steps: [
-          Step(
-            title: Text("step1"),
-            content: Text("content 1"),
-          ),
-          Step(
-            title: Text("step2"),
-            content: Text("content 2"),
-          ),
-          Step(
-            title: Text("step3"),
-            content: Text("content 3"),
-          ),
-        ],
-        currentStep: currentIndex,
-        onStepContinue: () {
-          if (currentIndex != 2) {
-            setState(() {
-              currentIndex++;
-            });
-          }
-        },onStepCancel: () {
-          if (currentIndex != 0) {
-            setState(() {
-              currentIndex--;
-            });
-          }
-        },
-      ),
+      // body: Stepper(
+      //   steps: const [
+      //     Step(
+      //       title: Text("step1"),
+      //       content: Text("content 1"),
+      //     ),
+      //     Step(
+      //       title: Text("step2"),
+      //       content: Text("content 2"),
+      //     ),
+      //     Step(
+      //       title: Text("step3"),
+      //       content: Text("content 3"),
+      //     ),
+      //   ],
+      //   currentStep: currentIndex,
+      //   onStepContinue: () {
+      //     if (currentIndex != 2) {
+      //       setState(() {
+      //         currentIndex++;
+      //       });
+      //     }
+      //   },onStepCancel: () {
+      //     if (currentIndex != 0) {
+      //       setState(() {
+      //         currentIndex--;
+      //       });
+      //     }
+      //   },
+      // ),
+
+    
     );
   }
 }
