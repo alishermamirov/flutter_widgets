@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_widgets/expansion_tile_widget.dart';
+import 'package:flutter_widgets/time_picker_widget.dart';
 
 
 void main() {
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: ExpansionTileWidget(),
+      home: TimePickerWidget(),
     );
   }
 }
